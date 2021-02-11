@@ -42,12 +42,26 @@ class Person:
         else:
             print("{} is unconscious.".format(self.firstname))
 
-Seda = Person("Seda", "Kurt", 95, status=True)
-Maria = Person("Maria", "Jones", 88, status=False)
-Lee = Person("Lee", "Williams", 72, status=True)
+Seda = Person("Seda", "Kurt", 100, status=True)
+Maria = Person("Maria", "Jones", 77, status=False)
+Lee = Person("Lee", "Williams", 40, status=True)
 
 print("{} is my friend? {}".format(Seda.firstname, Seda.status))
 print("{} is my friend? {}".format(Maria.firstname, Maria.status))
+
+Seda.introduce()
+Maria.introduce()
+Lee.introduce()
+'''
+Result:
+Hello, my name is Seda Kurt
+Hello, my name is Maria Jones
+Hello, my name is Lee Williams
+'''
+
+Seda.status_change()
+Maria.status_change()
+Lee.status_change()
 
 
 
